@@ -12,7 +12,6 @@ Evoluzione tecnologica di un motore a pistoni finalizzata a dimostrare come la g
 
 ![Disegno Tecnico](motvap.jpg)
 *Schema tecnico con le proporzioni dell'architettura meccanica.*
-
 Cilindro: Tubo in acciaio (64 mm) rettificato e lucidato a specchio internamente. 
 
 
