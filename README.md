@@ -48,5 +48,5 @@ Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta
 ⚠️ PROPRIETÀ INTELLETTUALE E LICENZA: Questo progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione e la logica software sono condivise esclusivamente per scopi didattici. È vietato ogni uso commerciale, industrializzazione o sfruttamento economico senza l'autorizzazione scritta dell'autore. Ogni riproduzione non autorizzata costituisce violazione del diritto d'autore.
 ## 📫 Contatti
 Se sei interessato a collaborare, approfondire gli aspetti tecnici o richiedere informazioni sul prototipo, puoi contattarmi:
-* **Email:** gianfr.colasanti@gmail.com
+* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
 * **GitHub:** Tramite le "Issues" di questo repository.
