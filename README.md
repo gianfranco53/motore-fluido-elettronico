@@ -1,69 +1,44 @@
-# ⚙️ Motore a Fluido Compresso – Prototipo "Colasanti"
+# ⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
+**Progettista:** Gianfranco Colasanti | **Stato del Progetto:** Prototipo Sperimentale di Prova (Proof of Concept)
 
-**Progettista:** Gianfranco Colasanti  
-**Stato del progetto:** Prototipo sperimentale (Proof of Concept)
-
----
-
-## 📝 Descrizione e Obiettivi
-Questo progetto rappresenta un prototipo sperimentale di **motore a pistoni alimentato a fluido compresso**, nato con l’obiettivo di dimostrare come una **gestione elettronica della distribuzione** possa superare alcuni limiti dei sistemi meccanici tradizionali.
-
-Il progetto non nasce con finalità industriali, ma come **studio tecnico, sperimentazione personale e piattaforma didattica**.
+### 📝 Descrizione e Obiettivi
+Evoluzione tecnologica di un motore a pistoni finalizzata a dimostrare come la **gestione elettronica della distribuzione** risolva i limiti dei sistemi meccanici tradizionali (valvole e scambiatori meccanici).
 
 ---
 
-## 🛠️ Architettura Meccanica
-
+### 🛠️ Architettura Meccanica
 ![Foto del Prototipo Reale](Foto_prototipo.jpeg)
 *Il prototipo del motore assemblato.*
-
 ![Disegno Tecnico](motvap.jpg)
 *Schema tecnico con le proporzioni dell'architettura meccanica.*
-
-**Componenti principali:**
-
-- **Cilindro:** Tubo in acciaio (Ø esterno 64 mm), rettificato e lucidato internamente a specchio
-- **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne
-- **Albero motore:** Costruito al tornio in tre elementi separati e assemblati con precisione
-- **Biella:** Collegata tramite due micro-cuscinetti per ridurre al minimo le resistenze
-- **Testata:** Alluminio con collettori da 3,5 mm e fori filettati passo 5 mm
-- **Basamento:** Struttura fissata su supporto in legno per smorzare vibrazioni
+- **Cilindro:** Tubo in acciaio (64 mm) rettificato e lucidato a specchio internamente.
+- **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne.
+- **Albero Motore:** Costruito al tornio in 3 pezzi separati e assemblato di precisione.
+- **Biella:** Collegata tramite 2 micro-cuscinetti per eliminare le resistenze delle bronzine.
+- **Testata:** Alluminio con collettori da 3.5 mm e fori filettati passo 5 mm.
+- **Basamento:** Struttura fissata su legno per smorzare le vibrazioni ad alta frequenza.
 
 ---
 
-## ⚡ Innovazione Elettronica
-
-La distribuzione del fluido è gestita elettronicamente tramite **Arduino**, eliminando la necessità di distributori meccanici.
-
-- **Sensori Hall:** Rilevamento preciso delle fasi PMS/PMI tramite magneti sull’albero.
-- **Distribuzione elettronica:** Controllo diretto delle elettrovalvole di spinta e scarico.
-- **Logica di “dead time”:** Ritardo tra le fasi per evitare corto-circuiti pneumatici.
+### ⚡ Innovazione Elettronica
+Il motore utilizza un sistema indipendente gestito da **Arduino** per eliminare lo spreco d'aria dei sistemi meccanici:
+- **Sensori di Hall:** Lettura precisa della fase tramite magneti sull'albero (attrito zero).
+- **Logica "Dead Time":** Il codice garantisce un ritardo di **500 microsecondi** tra le fasi per evitare il corto circuito pneumatico.
+- **Efficienza:** Ottimizzazione della coppia e riduzione drastica dei consumi di fluido.
 
 ---
 
-## 🚲 Prospettive Future
-
-Il prototipo dimostra la fattibilità di un **propulsore ausiliario per bicicletta**:
-- Assistenza in salita.
-- Freno motore elettronico in discesa.
-- Recupero energetico (KERS sperimentale).
+### 🚲 Prospettive Future
+Il prototipo dimostra la fattibilità di un **propulsore ausiliario per bicicletta** con funzione di assistenza in salita e ricarica (**KERS**) in discesa tramite freno motore elettronico.
 
 ---
 
-## ⚠️ Avvertenze e Responsabilità
-
-Questo progetto è **puramente sperimentale**. Chiunque lo replichi lo fa a proprio rischio. L’autore non è responsabile per danni a persone o cose.
-
----
-
-## 📜 Licenza e Utilizzo
-
-© 2025 Gianfranco Colasanti – Tutti i diritti riservati.
-Uso consentito per scopi personali e didattici. **Vietato l'uso commerciale senza consenso scritto.**
+### ⚠️ PROPRIETÀ INTELLETTUALE E LICENZA
+Questo progetto è un'opera dell'ingegno di **Gianfranco Colasanti**. La documentazione e la logica software sono condivise esclusivamente per scopi didattici. **È vietato ogni uso commerciale, industrializzazione o sfruttamento economico senza l'autorizzazione scritta dell'autore.** Ogni riproduzione non autorizzata costituisce violazione del diritto d'autore.
 
 ---
 
-## 📫 Contatti
-
-- **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
-- **GitHub:** tramite le *Issues* di questo repository
+### 📫 Contatti
+Se sei interessato a collaborare, approfondire gli aspetti tecnici o richiedere informazioni sul prototipo:
+* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
+* **GitHub:** Tramite le "Issues" di questo repository.
