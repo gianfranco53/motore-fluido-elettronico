@@ -18,7 +18,7 @@ Il progetto non nasce con finalità industriali, ma come **studio tecnico, speri
 ![Foto del Prototipo Reale](Foto_prototipo.jpeg)
 *Il prototipo del motore assemblato.*
 
-<div style="margin-top:20px;"></div>
+<div style="margin-top:40px;"></div>
 
 ![Disegno Tecnico](motvap.jpg)
 *Schema tecnico con le proporzioni dell'architettura meccanica.*
