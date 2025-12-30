@@ -1,19 +1,36 @@
 # ⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
 
-**Progettista:** Gianfranco Colasanti | **Stato:** Proof of Concept
+**Progettista:** Gianfranco Colasanti | **Stato del Progetto:** Prototipo Sperimentale (Proof of Concept)
 
 ---
 
-### 🛠️ Architettura Meccanica e Design
-| Visione del Progetto | Specifiche Tecniche |
-| :--- | :--- |
-| ![Foto del Prototipo Reale](Foto_prototipo.jpeg) | **Cilindro:** Acciaio (64 mm) rettificato.<br>**Pistone:** Alluminio (Ø 28 mm, corsa 15 mm).<br>**Albero Motore:** Tornito in 3 pezzi separati.<br>**Biella:** Su 2 micro-cuscinetti.<br>**Testata:** Alluminio, collettori 3.5 mm.<br>**Basamento:** Struttura su legno antivibrazione. |
-| ![Disegno Tecnico](motvap.jpg) | **Innovazione Elettronica:**<br>Gestione tramite Arduino.<br>**Sensori Hall:** Lettura fase magnetica.<br>**Dead Time:** Ritardo di 500 µs (anti corto-circuito).<br>**Efficienza:** Ottimizzazione coppia/consumi. |
+### 🛠️ Architettura Meccanica
+
+<img src="Foto_prototipo.jpeg" width="500" alt="Foto Prototipo">
+<br><em>Il prototipo del motore assemblato.</em>
+
+<img src="motvap.jpg" width="600" height="350" style="object-fit: cover;" alt="Disegno Tecnico">
+<br><em>Schema tecnico con le proporzioni dell'architettura meccanica (N.T.S.).</em>
+
+* **Cilindro:** Tubo in acciaio (64 mm) rettificato e lucidato a specchio internamente. 
+* **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne. 
+* **Albero Motore:** Costruito al tornio in 3 pezzi separati e assemblato di precisione. 
+* **Biella:** Collegata tramite 2 micro-cuscinetti per eliminare le resistenze delle bronzine. 
+* **Testata:** Alluminio con collettori da 3.5 mm e fori filettati passo 5 mm. 
+* **Basamento:** Struttura fissata su legno per smorzare le vibrazioni ad alta frequenza. 
 
 ---
 
-### 📝 Descrizione e Obiettivi
-Evoluzione tecnologica finalizzata a dimostrare come la gestione elettronica della distribuzione risolva i limiti dei sistemi meccanici tradizionali. Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico.
+### ⚡ Innovazione Elettronica
+Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo spreco d'aria dei sistemi meccanici: 
+* **Sensori di Hall:** Lettura precisa della fase tramite magneti sull'albero (attrito zero). 
+* **Logica "Dead Time":** Il codice garantisce un ritardo di 500 microsecondi tra le fasi per evitare il corto circuito pneumatico. 
+* **Efficienza:** Ottimizzazione della coppia e riduzione drastica dei consumi di fluido. 
+
+---
+
+### 🚲 Prospettive Future
+Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico. 
 
 ---
 
@@ -28,4 +45,5 @@ Questo progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazi
 ---
 
 ### 📫 Contatti
-* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com) | **GitHub:** Sezione "Issues"
+* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
+* **GitHub:** Tramite le "Issues" di questo repository.
