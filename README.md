@@ -22,8 +22,7 @@ Il progetto non nasce con finalità industriali, ma come **studio tecnico, speri
 
 ![Disegno Tecnico](motvap.jpg)
 *Schema tecnico con le proporzioni dell'architettura meccanica.*
-
-
+<div style="margin-top:5px;"></div>  <!-- spazio minimo sotto il disegno -->
 **Componenti principali:**
 
 - **Cilindro:** Tubo in acciaio (Ø esterno 64 mm), rettificato e lucidato internamente a specchio  
