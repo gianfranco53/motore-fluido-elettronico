@@ -1,52 +1,95 @@
-⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
+# ⚙️ Motore a Fluido Compresso – Prototipo "Colasanti"
 
-Progettista: Gianfranco Colasanti  Stato del Progetto: Prototipo Sperimentale di Prova (Proof of Concept).
+**Progettista:** Gianfranco Colasanti  
+**Stato del progetto:** Prototipo sperimentale (Proof of Concept)
 
-📝 Descrizione e Obiettivi
-Evoluzione tecnologica di un motore a pistoni finalizzata a dimostrare come la gestione elettronica della distribuzione risolva i limiti dei sistemi meccanici tradizionali. 
+---
 
-🛠️ Architettura Meccanica
+## 📝 Descrizione e Obiettivi
+
+Questo progetto rappresenta un prototipo sperimentale di **motore a pistoni alimentato a fluido compresso**, nato con l’obiettivo di dimostrare come una **gestione elettronica della distribuzione** possa superare alcuni limiti dei sistemi meccanici tradizionali (valvole, distributori, scambiatori meccanici).
+
+Il progetto non nasce con finalità industriali, ma come **studio tecnico, sperimentazione personale e piattaforma didattica** per testare soluzioni alternative di controllo del ciclo motore.
+
+---
+
+## 🛠️ Architettura Meccanica
 
 ![Foto del Prototipo Reale](Foto_prototipo.jpeg)
 *Il prototipo del motore assemblato.*
 
+<div style="margin-top:20px;"></div>
+
 ![Disegno Tecnico](motvap.jpg)
 *Schema tecnico con le proporzioni dell'architettura meccanica.*
-Cilindro: Tubo in acciaio (64 mm) rettificato e lucidato a specchio internamente. 
 
 
-Pistone: Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne. 
+**Componenti principali:**
 
+- **Cilindro:** Tubo in acciaio (Ø esterno 64 mm), rettificato e lucidato internamente a specchio  
+- **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne  
+- **Albero motore:** Costruito al tornio in tre elementi separati e assemblati con precisione  
+- **Biella:** Collegata tramite due micro-cuscinetti per ridurre al minimo le resistenze  
+- **Testata:** Alluminio con collettori da 3,5 mm e fori filettati passo 5 mm  
+- **Basamento:** Struttura fissata su supporto in legno per smorzare vibrazioni ad alta frequenza  
 
-Albero Motore: Costruito al tornio in 3 pezzi separati e assemblato di precisione. 
+---
 
+## ⚡ Innovazione Elettronica
 
-Biella: Collegata tramite 2 micro-cuscinetti per eliminare le resistenze delle bronzine. 
+La distribuzione del fluido è gestita elettronicamente tramite **Arduino**, eliminando la necessità di distributori o scambiatori meccanici tradizionali.
 
+**Caratteristiche principali:**
 
-Testata: Alluminio con collettori da 3.5 mm e fori filettati passo 5 mm. 
+- **Sensori Hall:** Rilevamento preciso delle fasi PMS/PMI tramite magneti sull’albero (attrito nullo)  
+- **Distribuzione elettronica:** Controllo diretto delle elettrovalvole di spinta e scarico  
+- **Logica di “dead time”:** Introduzione di un breve ritardo tra le fasi per evitare corto-circuiti pneumatici  
+- **Efficienza:** Riduzione dello spreco di fluido e maggiore controllo della coppia  
 
+---
 
-Basamento: Struttura fissata su legno per smorzare le vibrazioni ad alta frequenza. 
+## 🚲 Prospettive Future
 
-⚡ Innovazione Elettronica
-Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo spreco d'aria dei sistemi meccanici: 
+Il prototipo dimostra la fattibilità concettuale di un **propulsore ausiliario per bicicletta**, utilizzabile come:
+- assistenza in salita  
+- freno motore elettronico in discesa  
+- possibile recupero energetico (concetto KERS sperimentale)
 
+---
 
-Sensori di Hall: Lettura precisa della fase tramite magneti sull'albero (attrito zero). 
+## ⚠️ Avvertenze e Responsabilità
 
+Questo progetto è **puramente sperimentale**.
 
-Logica "Dead Time": Il codice garantisce un ritardo di 500 microsecondi tra le fasi per evitare il corto circuito pneumatico. 
+Chiunque utilizzi, replichi o modifichi questo progetto **lo fa a proprio rischio**.  
+L’autore **non fornisce alcuna garanzia** e **non è responsabile per danni a persone, cose o animali** derivanti dall’uso del progetto o delle informazioni qui contenute.
 
+---
 
+## 📜 Licenza e Utilizzo
 
-Efficienza: Ottimizzazione della coppia e riduzione drastica dei consumi di fluido. 
+© 2025 Gianfranco Colasanti – Tutti i diritti riservati.
 
-🚲 Prospettive Future
-Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico. 
+Il progetto è condiviso **per scopi personali, didattici e di studio**.  
+È consentito:
+- studiare il progetto  
+- sperimentare  
+- modificare per uso personale  
 
-⚠️ PROPRIETÀ INTELLETTUALE E LICENZA: Questo progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione e la logica software sono condivise esclusivamente per scopi didattici. È vietato ogni uso commerciale, industrializzazione o sfruttamento economico senza l'autorizzazione scritta dell'autore. Ogni riproduzione non autorizzata costituisce violazione del diritto d'autore.
+⚠️ **Non è consentito alcun uso commerciale, industriale o produttivo** (anche parziale) **senza il consenso scritto dell’autore**.
+
+Chiunque intenda:
+- commercializzare  
+- industrializzare  
+- integrare il progetto in prodotti o servizi a pagamento  
+
+**deve contattare preventivamente l’autore.**
+
+---
+
 ## 📫 Contatti
-Se sei interessato a collaborare, approfondire gli aspetti tecnici o richiedere informazioni sul prototipo, puoi contattarmi:
-* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
-* **GitHub:** Tramite le "Issues" di questo repository.
+
+Se sei interessato a collaborare, approfondire gli aspetti tecnici o discutere possibili sviluppi:
+
+- **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)  
+- **GitHub:** tramite le *Issues* di questo repository  
