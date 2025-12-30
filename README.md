@@ -1,36 +1,27 @@
 # ⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
 
-**Progettista:** Gianfranco Colasanti | **Stato del Progetto:** Prototipo Sperimentale (Proof of Concept)
+**Progettista:** Gianfranco Colasanti | **Stato:** Prototipo Sperimentale (Proof of Concept)
 
 ---
 
-### 🛠️ Architettura Meccanica
+### 🛠️ Architettura Meccanica e Design
 
-<img src="Foto_prototipo.jpeg" width="500" alt="Foto Prototipo">
-<br><em>Il prototipo del motore assemblato.</em>
-
-<img src="motvap.jpg" width="600" height="350" style="object-fit: cover;" alt="Disegno Tecnico">
-<br><em>Schema tecnico con le proporzioni dell'architettura meccanica (N.T.S.).</em>
-
-* **Cilindro:** Tubo in acciaio (64 mm) rettificato e lucidato a specchio internamente. 
-* **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne. 
-* **Albero Motore:** Costruito al tornio in 3 pezzi separati e assemblato di precisione. 
-* **Biella:** Collegata tramite 2 micro-cuscinetti per eliminare le resistenze delle bronzine. 
-* **Testata:** Alluminio con collettori da 3.5 mm e fori filettati passo 5 mm. 
-* **Basamento:** Struttura fissata su legno per smorzare le vibrazioni ad alta frequenza. 
+| Visione del Progetto | Specifiche Tecniche |
+| :--- | :--- |
+| ![Foto Prototipo](Foto_prototipo.jpeg) <br><br> ![Disegno Tecnico](motvap.jpg) | **Cilindro:** Acciaio (64 mm) rettificato e lucidato a specchio.<br><br>**Pistone:** Alluminio (Ø 28 mm, corsa 15 mm).<br><br>**Albero Motore:** Tornito in 3 pezzi e assemblato di precisione.<br><br>**Biella:** Su 2 micro-cuscinetti (no bronzine).<br><br>**Testata:** Alluminio, collettori 3.5 mm, filettatura passo 5.<br><br>**Basamento:** Struttura su legno antivibrazione. |
 
 ---
 
 ### ⚡ Innovazione Elettronica
-Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo spreco d'aria dei sistemi meccanici: 
-* **Sensori di Hall:** Lettura precisa della fase tramite magneti sull'albero (attrito zero). 
-* **Logica "Dead Time":** Il codice garantisce un ritardo di 500 microsecondi tra le fasi per evitare il corto circuito pneumatico. 
-* **Efficienza:** Ottimizzazione della coppia e riduzione drastica dei consumi di fluido. 
+Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo spreco d'aria dei sistemi meccanici:
+* **Sensori di Hall:** Lettura precisa della fase tramite magneti sull'albero (attrito zero).
+* **Logica "Dead Time":** Il codice garantisce un ritardo di 500 microsecondi tra le fasi per evitare il corto circuito pneumatico.
+* **Efficienza:** Ottimizzazione della coppia e riduzione drastica dei consumi di fluido.
 
 ---
 
 ### 🚲 Prospettive Future
-Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico. 
+Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico.
 
 ---
 
