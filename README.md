@@ -20,19 +20,18 @@ Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo s
 
 ---
 
-### 🚲 Prospettive Future
-Il prototipo dimostra la fattibilità di un propulsore ausiliario per bicicletta con funzione di assistenza in salita e ricarica (KERS) in discesa tramite freno motore elettronico.
+Prospettive Future: Verso l'Ibrido
+Il prototipo attuale nasce come propulsore ausiliario pneumatico per cicli. Sebbene la costruzione abbia confermato la validità del sistema — con un prototipo perfettamente funzionante e dotato di un'ottima coppia motrice — i test sul campo hanno evidenziato che l'autonomia basata sulla sola aria compressa non è ancora soddisfacente per un utilizzo pratico esteso.
 
----
+Evoluzione del Progetto: L'attuale configurazione funge da base per lo sviluppo di un sistema ibrido Aria/GPL. L'obiettivo è superare i limiti di densità energetica dell'aria compressa pura sfruttando l'espansione termica. L'iniezione e la combustione del GPL permetteranno di riscaldare l'aria in ingresso, aumentandone drasticamente pressione e volume, trasformando il sistema in un propulsore a combustione assistita ad alta efficienza.
 
-### ⚠️ AVVERTENZE E RESPONSABILITÀ
-**Questo progetto è puramente sperimentale. Chiunque utilizzi, replichi o modifichi questo progetto lo fa a proprio rischio. L’autore non fornisce alcuna garanzia e non è responsabile per danni a persone, cose o animali derivanti dall’uso del progetto o delle informazioni qui contenute.**
+⚠️ AVVERTENZE E RESPONSABILITÀ
+Questo progetto è puramente sperimentale. Chiunque scelga di replicare, utilizzare o modificare le soluzioni tecniche qui descritte lo fa a proprio ed esclusivo rischio. L'autore non fornisce alcuna garanzia, esplicita o implicita, e declina ogni responsabilità per danni a persone, animali o cose derivanti dall'applicazione delle informazioni o dall'uso dei prototipi qui illustrati. La manipolazione di recipienti a pressione e gas infiammabili richiede competenze specifiche e massima cautela.
 
 ---
 
 ### 📜 PROPRIETÀ INTELLETTUALE E LICENZA
-Questo progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione e la logica software sono condivise esclusivamente per scopi didattici. **È vietato ogni uso commerciale, industrializzazione o sfruttamento economico senza l'autorizzazione scritta dell'autore.** Ogni riproduzione non autorizzata costituisce violazione del diritto d'autore.
-
+Il presente progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione, i disegni tecnici e la logica software sviluppata su piattaforma Arduino sono condivisi esclusivamente per scopi didattici e di ricerca.
 ---
 
 ### 📫 Contatti
