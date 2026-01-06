@@ -24,7 +24,7 @@ Il motore è costruito con materiali ferrosi e alluminio, rifinito al tornio per
 | **Albero Motore** | Costruito in **3 pezzi separati**, assemblati a pressione e bilanciati al tornio. |
 | **Biella** | Montata su **2 micro-cuscinetti**, eliminando le resistenze delle bronzine tradizionali. |
 | **Testata** | In alluminio con collettori da 3.5 mm e fori filettati passo 5 mm. |
-| **Volano** | Realizzato con l'unione a pressione di **4 rondelle in acciaio da 50 mm**. |
+| **Volano:** Realizzato in un **unico blocco di ferro** (diametro 48 mm, spessore 11 mm) per la massima stabilità inerziale |
 
 ---
 
@@ -36,4 +36,9 @@ La distribuzione "Cam-less" è resa possibile da una lettura magnetica della fas
 * **Regolazione Fase:** L'anticipo non è fisso; può essere regolato fisicamente spostando i magneti sul volano per trovare lo "sweet spot" di massima coppia.
 * **Logica "Dead Time":** Il software garantisce un ritardo di sicurezza (500 microsecondi) tra la chiusura di una valvola e l'apertura della successiva per massimizzare la pressione utile nel cilindro.
 
+### ⚠️ Avvertenze
+Progetto puramente sperimentale. La manipolazione di recipienti in pressione e gas infiammabili richiede competenze specifiche. L'autore declina ogni responsabilità.
+
+### 📜 Proprietà Intellettuale
+Opera dell'ingegno di **Gianfranco Colasanti**. Documentazione e codice condivisi esclusivamente per scopi didattici e di ricerca.
 ---
