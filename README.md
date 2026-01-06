@@ -1,55 +1,57 @@
 # ⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
 
 **Progettista:** Gianfranco Colasanti | **Stato:** Prototipo Sperimentale (Proof of Concept)
+**Performance raggiunte:** 1200 RPM | **Sistema di controllo:** Arduino Uno
 
 ---
-Abstract del Progetto: Motore Fluido Elettronico (M.F.E.)
-Descrizione Generale Il progetto M.F.E. rappresenta una radicale evoluzione del motore a pistoni tradizionale. A differenza dei sistemi pneumatici o a combustione classica, questo prototipo elimina completamente l'albero a camme e i leveraggi meccanici della distribuzione, sostituendoli con un sistema di gestione elettronica intelligente basato su Arduino
-### 🛠️ Architettura Meccanica di Precisione Il motore è costruito con tecniche di officina avanzate per massimizzare la resistenza e ridurre gli attriti:
 
+### 🚀 1. Descrizione del Progetto: Motore Fluido Elettronico (M.F.E.)
 
-Cilindro e Pistone: Cilindro in acciaio da 64 mm con interno lucidato a specchio per una tenuta pneumatica perfetta. Il pistone è in alluminio (Ø 28 mm) per ridurre le masse alterne.
+Il progetto M.F.E. nasce dalla necessità di superare i limiti di efficienza dei motori pneumatici a distribuzione meccanica. L'innovazione principale consiste nell'eliminazione totale dell'albero a camme, sostituito da un **sistema di gestione elettronica a fasatura variabile**. 
 
-
-
-Albero Motore e Biella: Albero costruito in 3 pezzi separati, assemblati a pressione e rettificati al tornio per una geometria perfetta. La biella ruota su 2 micro-cuscinetti, eliminando le resistenze delle bronzine.
-
-
-
-
-Geometria: Lo spinotto sull'albero e la corsa sono perfettamente accoppiati a 14-15 mm.
----
-
-### ⚡Innovazione Elettronica e Timing Il controllo del fluido è gestito digitalmente per eliminare gli sprechi tipici dei sistemi meccanici:
-
-
-
-Sensori di Hall (3144): Rilevano la posizione dell'albero tramite magneti al neodimio sul volano (attrito zero).
-
-
-
-
-Logica "Dead Time": Il software implementa un ritardo controllato tra le fasi di spinta e scarico per evitare il "corto circuito pneumatico", garantendo che l'aria non venga sprecata.
-
-
-Distribuzione Cam-less: L'apertura delle valvole è affidata a elettrovalvole (o valvole a fungo nel nuovo design) pilotate da MOSFET via Arduino
----
-
-Prospettive Future: Verso l'Ibrido
-Il prototipo attuale nasce come propulsore ausiliario pneumatico per cicli. Sebbene la costruzione abbia confermato la validità del sistema — con un prototipo perfettamente funzionante e dotato di un'ottima coppia motrice — i test sul campo hanno evidenziato che l'autonomia basata sulla sola aria compressa non è ancora soddisfacente per un utilizzo pratico esteso.
-
-Evoluzione del Progetto: L'attuale configurazione funge da base per lo sviluppo di un sistema ibrido Aria/GPL. L'obiettivo è superare i limiti di densità energetica dell'aria compressa pura sfruttando l'espansione termica. L'iniezione e la combustione del GPL permetteranno di riscaldare l'aria in ingresso, aumentandone drasticamente pressione e volume, trasformando il sistema in un propulsore a combustione assistita ad alta efficienza.
-
-⚠️ AVVERTENZE E RESPONSABILITÀ
-Questo progetto è puramente sperimentale. Chiunque scelga di replicare, utilizzare o modificare le soluzioni tecniche qui descritte lo fa a proprio ed esclusivo rischio. L'autore non fornisce alcuna garanzia, esplicita o implicita, e declina ogni responsabilità per danni a persone, animali o cose derivanti dall'applicazione delle informazioni o dall'uso dei prototipi qui illustrati. La manipolazione di recipienti a pressione e gas infiammabili richiede competenze specifiche e massima cautela.
+Arduino decide, in base alla lettura dei sensori, l'istante esatto di immissione e scarico del fluido. Questo permette di eliminare gli attriti meccanici e di ottimizzare il consumo d'aria, risolvendo il problema del "corto circuito pneumatico" (fuoriuscita del fluido prima del lavoro utile).
 
 ---
-Evoluzione e Prospettive Future Nato come prototipo sperimentale per la propulsione ausiliaria di biciclette, il progetto si sta evolvendo verso un sistema ibrido Aria/Gas
 
-### 📜 PROPRIETÀ INTELLETTUALE E LICENZA
-Il presente progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione, i disegni tecnici e la logica software sviluppata su piattaforma Arduino sono condivisi esclusivamente per scopi didattici e di ricerca.
+### 🛠️ 2. Architettura Meccanica e Design
+
+Il motore è costruito con materiali ferrosi e alluminio, rifinito al tornio per garantire la massima precisione dei componenti rotanti.
+
+| Componente | Specifiche Tecniche |
+| :--- | :--- |
+| ![Foto Prototipo](Foto_prototipo.jpeg) | **Cilindro:** Tubo in acciaio da 64 mm, interno **lappato a specchio** per la massima tenuta pneumatica. |
+| ![Disegno Tecnico](motvap.jpg) | **Pistone:** Alluminio (Ø 28 mm, corsa 15 mm) per ridurre le masse alterne e le inerzie. |
+| **Albero Motore** | Costruito in **3 pezzi separati**, assemblati a pressione e bilanciati al tornio. |
+| **Biella** | Montata su **2 micro-cuscinetti**, eliminando le resistenze delle bronzine tradizionali. |
+| **Testata** | In alluminio con collettori da 3.5 mm e fori filettati passo 5 mm. |
+| **Volano** | Realizzato con l'unione a pressione di **4 rondelle in acciaio da 50 mm**. |
+
 ---
 
-### 📫 Contatti
-* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
-* **GitHub:** Tramite le "Issues" di questo repository.
+### ⚡ 3. Sistema di Timing ed Elettronica
+
+La distribuzione "Cam-less" è resa possibile da una lettura magnetica della fase:
+
+* **Sensori di Hall (3144):** Posizionati davanti al volano, rilevano il passaggio di **4 magneti al neodimio** (tutti con la stessa polarità).
+* **Regolazione Fase:** L'anticipo non è fisso; può essere regolato fisicamente spostando i magneti sul volano per trovare lo "sweet spot" di massima coppia.
+* **Logica "Dead Time":** Il software garantisce un ritardo di sicurezza (500 microsecondi) tra la chiusura di una valvola e l'apertura della successiva per massimizzare la pressione utile nel cilindro.
+
+---
+
+### 💻 4. Codice di Controllo (Logic Core)
+
+Il sistema utilizza una logica a interrupt o lettura di fronte per gestire le elettrovalvole. Di seguito un estratto della logica di gestione:
+
+```cpp
+// Estratto logica di controllo valvole
+if (pms && !prevPMS) {
+    digitalWrite(pinEVSpinta, HIGH);   // Apertura valvola spinta
+    digitalWrite(pinEVScarico, LOW);   // Sicurezza: scarico chiuso
+    spintaAttiva = true;
+    tSpinta = millis();
+}
+// Chiusura automatica dopo durata programmata via potenziometro
+if (spintaAttiva && (millis() - tSpinta >= durataSpinta)) {
+    digitalWrite(pinEVSpinta, LOW);
+    spintaAttiva = false;
+}
