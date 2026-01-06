@@ -51,9 +51,19 @@ Per superare questa barriera, il progetto si sta evolvendo verso un **Sistema Ib
 * **Funzionamento:** L'aggiunta di una fase di combustione (o riscaldamento del fluido) permetterà di aumentare drasticamente il volume e la pressione del gas in ingresso, moltiplicando l'autonomia e la potenza utile senza stravolgere la meccanica attuale.
 
 ---
-### ⚠️ Avvertenze
-Progetto puramente sperimentale. La manipolazione di recipienti in pressione e gas infiammabili richiede competenze specifiche. L'autore declina ogni responsabilità.
+
+### 📫 Contatti e Collaborazioni
+
+Se sei interessato al progetto, vuoi scambiare idee tecniche o approfondire lo sviluppo del sistema ibrido, puoi contattarmi qui:
+
+* **Email:** [gianfr.colasanti@gmail.com](mailto:gianfr.colasanti@gmail.com)
+* * **Instagram:** [@gianfranco.colasanti](https://www.instagram.com/gianfranco.colasanti)
+* **GitHub Issues:** Apri una segnalazione direttamente in questo repository per discussioni tecniche sul codice o sulla meccanica.
+
+---
+
+### ⚠️ Avvertenze e Responsabilità
+Questo progetto è puramente sperimentale. La manipolazione di recipienti a pressione e gas infiammabili richiede competenze specifiche e massima cautela. L'autore declina ogni responsabilità per danni derivanti dall'applicazione delle informazioni qui illustrate.
 
 ### 📜 Proprietà Intellettuale
-Opera dell'ingegno di **Gianfranco Colasanti**. Documentazione e codice condivisi esclusivamente per scopi didattici e di ricerca.
----
+Il presente progetto è un'opera dell'ingegno di **Gianfranco Colasanti**. La documentazione e il codice sono condivisi esclusivamente per scopi didattici e di ricerca.
