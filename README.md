@@ -3,21 +3,36 @@
 **Progettista:** Gianfranco Colasanti | **Stato:** Prototipo Sperimentale (Proof of Concept)
 
 ---
+Abstract del Progetto: Motore Fluido Elettronico (M.F.E.)
+Descrizione Generale Il progetto M.F.E. rappresenta una radicale evoluzione del motore a pistoni tradizionale. A differenza dei sistemi pneumatici o a combustione classica, questo prototipo elimina completamente l'albero a camme e i leveraggi meccanici della distribuzione, sostituendoli con un sistema di gestione elettronica intelligente basato su Arduino
+### 🛠️ Architettura Meccanica di Precisione Il motore è costruito con tecniche di officina avanzate per massimizzare la resistenza e ridurre gli attriti:
 
-### 🛠️ Architettura Meccanica e Design
 
-| Visione del Progetto | Specifiche Tecniche |
-| :--- | :--- |
-| ![Foto Prototipo](Foto_prototipo.jpeg) <br><br> ![Disegno Tecnico](motvap.jpg) | **Cilindro:** Acciaio (64 mm) rettificato e lucidato a specchio.<br><br>**Pistone:** Alluminio (Ø 28 mm, corsa 15 mm).<br><br>**Albero Motore:** Tornito in 3 pezzi e assemblato di precisione.<br><br>**Biella:** Su 2 micro-cuscinetti (no bronzine).<br><br>**Testata:** Alluminio, collettori 3.5 mm, filettatura passo 5.<br><br>**Basamento:** Struttura su legno antivibrazione. |
+Cilindro e Pistone: Cilindro in acciaio da 64 mm con interno lucidato a specchio per una tenuta pneumatica perfetta. Il pistone è in alluminio (Ø 28 mm) per ridurre le masse alterne.
 
+
+
+Albero Motore e Biella: Albero costruito in 3 pezzi separati, assemblati a pressione e rettificati al tornio per una geometria perfetta. La biella ruota su 2 micro-cuscinetti, eliminando le resistenze delle bronzine.
+
+
+
+
+Geometria: Lo spinotto sull'albero e la corsa sono perfettamente accoppiati a 14-15 mm.
 ---
 
-### ⚡ Innovazione Elettronica
-Il motore utilizza un sistema indipendente gestito da Arduino per eliminare lo spreco d'aria dei sistemi meccanici:
-* **Sensori di Hall:** Lettura precisa della fase tramite magneti sull'albero (attrito zero).
-* **Logica "Dead Time":** Il codice garantisce un ritardo di 500 microsecondi tra le fasi per evitare il corto circuito pneumatico.
-* **Efficienza:** Ottimizzazione della coppia e riduzione drastica dei consumi di fluido.
+### ⚡Innovazione Elettronica e Timing Il controllo del fluido è gestito digitalmente per eliminare gli sprechi tipici dei sistemi meccanici:
 
+
+
+Sensori di Hall (3144): Rilevano la posizione dell'albero tramite magneti al neodimio sul volano (attrito zero).
+
+
+
+
+Logica "Dead Time": Il software implementa un ritardo controllato tra le fasi di spinta e scarico per evitare il "corto circuito pneumatico", garantendo che l'aria non venga sprecata.
+
+
+Distribuzione Cam-less: L'apertura delle valvole è affidata a elettrovalvole (o valvole a fungo nel nuovo design) pilotate da MOSFET via Arduino
 ---
 
 Prospettive Future: Verso l'Ibrido
@@ -29,6 +44,7 @@ Evoluzione del Progetto: L'attuale configurazione funge da base per lo sviluppo 
 Questo progetto è puramente sperimentale. Chiunque scelga di replicare, utilizzare o modificare le soluzioni tecniche qui descritte lo fa a proprio ed esclusivo rischio. L'autore non fornisce alcuna garanzia, esplicita o implicita, e declina ogni responsabilità per danni a persone, animali o cose derivanti dall'applicazione delle informazioni o dall'uso dei prototipi qui illustrati. La manipolazione di recipienti a pressione e gas infiammabili richiede competenze specifiche e massima cautela.
 
 ---
+Evoluzione e Prospettive Future Nato come prototipo sperimentale per la propulsione ausiliaria di biciclette, il progetto si sta evolvendo verso un sistema ibrido Aria/Gas
 
 ### 📜 PROPRIETÀ INTELLETTUALE E LICENZA
 Il presente progetto è un'opera dell'ingegno di Gianfranco Colasanti. La documentazione, i disegni tecnici e la logica software sviluppata su piattaforma Arduino sono condivisi esclusivamente per scopi didattici e di ricerca.
