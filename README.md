@@ -37,21 +37,3 @@ La distribuzione "Cam-less" è resa possibile da una lettura magnetica della fas
 * **Logica "Dead Time":** Il software garantisce un ritardo di sicurezza (500 microsecondi) tra la chiusura di una valvola e l'apertura della successiva per massimizzare la pressione utile nel cilindro.
 
 ---
-
-### 💻 4. Codice di Controllo (Logic Core)
-
-Il sistema utilizza una logica a interrupt o lettura di fronte per gestire le elettrovalvole. Di seguito un estratto della logica di gestione:
-
-```cpp
-// Estratto logica di controllo valvole
-if (pms && !prevPMS) {
-    digitalWrite(pinEVSpinta, HIGH);   // Apertura valvola spinta
-    digitalWrite(pinEVScarico, LOW);   // Sicurezza: scarico chiuso
-    spintaAttiva = true;
-    tSpinta = millis();
-}
-// Chiusura automatica dopo durata programmata via potenziometro
-if (spintaAttiva && (millis() - tSpinta >= durataSpinta)) {
-    digitalWrite(pinEVSpinta, LOW);
-    spintaAttiva = false;
-}
