@@ -36,6 +36,21 @@ La distribuzione "Cam-less" è resa possibile da una lettura magnetica della fas
 * **Regolazione Fase:** L'anticipo non è fisso; può essere regolato fisicamente spostando i magneti sul volano per trovare lo "sweet spot" di massima coppia.
 * **Logica "Dead Time":** Il software garantisce un ritardo di sicurezza (500 microsecondi) tra la chiusura di una valvola e l'apertura della successiva per massimizzare la pressione utile nel cilindro.
 
+---
+
+📈 3. Analisi dei Risultati e Sviluppo Ibrido
+
+I test condotti sul prototipo alimentato esclusivamente ad aria compressa hanno dato risultati eccellenti in termini di rendimento meccanico e fluidodinamico. Questo dimostra la piena fattibilità del sistema di distribuzione elettronica "Cam-less".
+
+#### Il passaggio al Sistema Ibrido
+Nonostante l'alto rendimento, i test sul campo hanno evidenziato un limite fisico: l'autonomia limitata dovuta alla bassa densità energetica dell'aria compressa per un uso pratico esteso (es. su bicicletta).
+
+Per superare questa barriera, il progetto si sta evolvendo verso un **Sistema Ibrido Aria/Combustibile (Gas/Butano)**:
+
+* **Obiettivo:** Utilizzare l'aria compressa non solo come fluido motore, ma come vettore per l'espansione termica.
+* **Funzionamento:** L'aggiunta di una fase di combustione (o riscaldamento del fluido) permetterà di aumentare drasticamente il volume e la pressione del gas in ingresso, moltiplicando l'autonomia e la potenza utile senza stravolgere la meccanica attuale.
+
+---
 ### ⚠️ Avvertenze
 Progetto puramente sperimentale. La manipolazione di recipienti in pressione e gas infiammabili richiede competenze specifiche. L'autore declina ogni responsabilità.
 
