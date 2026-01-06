@@ -1,7 +1,7 @@
 # ⚙️ Motore a Fluido Compresso - Prototipo "Colasanti"
 
 **Progettista:** Gianfranco Colasanti | **Stato:** Prototipo Sperimentale (Proof of Concept)
-**Performance raggiunte:** 1200 RPM | **Sistema di controllo:** Arduino Uno
+**Performance raggiunte:** Eccellente fluidità meccanica con rotazione libera a bassa pressione (0.5) | **Sistema di controllo:** Arduino Uno
 
 ---
 
