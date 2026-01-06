@@ -32,7 +32,7 @@ Il motore è costruito con materiali ferrosi e alluminio, rifinito al tornio per
 
 La distribuzione "Cam-less" è resa possibile da una lettura magnetica della fase:
 
-* **Sensori di Hall (3144):** Posizionati davanti al volano, rilevano il passaggio di **4 magneti al neodimio** (tutti con la stessa polarità).
+* **Sensori di Hall (3144):** Posizionati davanti al volano, rilevano il passaggio di **2 magneti al neodimio** (tutti con la stessa polarità).
 * **Regolazione Fase:** L'anticipo non è fisso; può essere regolato fisicamente spostando i magneti sul volano per trovare lo "sweet spot" di massima coppia.
 * **Logica "Dead Time":** Il software garantisce un ritardo di sicurezza (500 microsecondi) tra la chiusura di una valvola e l'apertura della successiva per massimizzare la pressione utile nel cilindro.
 
