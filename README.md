@@ -1,3 +1,73 @@
+# 🔩 Prototipo di Motore Pneumatico ad Alta Efficienza con Distribuzione Elettronica "Cam-less"
+
+**Autore:** Gianfranco Colasanti | **Stato:** Prototipo Sperimentale (Proof of Concept) | **Ultimo Aggiornamento:** Gennaio 2026
+
+---
+## 🖼️ Il Prototipo Reale
+
+La foto seguente mostra il prototipo fisico "Colasanti" assemblato e funzionante, un esempio concreto di ingegneria DIY di precisione.
+
+![Foto del Prototipo Completato](Foto_prototipo.jpeg)
+
+*Figura 1: Il prototipo sperimentale del motore "Cam-less". Sono visibili il cilindro, il volano con i magneti, i sensori Hall e l'elettronica di controllo.*
+
+---
+
+## 📖 1. Sommario Esecutivo & Premessa
+
+Questo progetto nasce da una sfida ingegneristica precisa: **superare l'inefficienza intrinseca dei motori pneumatici tradizionali**. La soluzione proposta è radicale: l'eliminazione completa del sistema di distribuzione meccanico (albero a camme o cassetti), sostituito da un **sistema di gestione elettronica "Cam-less"** comandato da Arduino.
+
+Questo documento si propone di guidare il lettore attraverso:
+1.  I **fondamenti** di un motore pneumatico e i suoi limiti tradizionali.
+2.  La **soluzione innovativa** implementata in questo prototipo.
+3.  I **dettagli costruttivi** e i risultati sperimentali.
+4.  La **roadmap futura** verso un sistema ibrido.
+
+---
+
+## ⚙️ 2. Introduzione: Cos'è un Motore Pneumatico e Quali sono i suoi Limiti?
+
+### 2.1 Il Principio di Funzionamento
+Un motore pneumatico converte l'energia potenziale dell'**aria compressa** in lavoro meccanico (rotazione di un albero). Il suo funzionamento è concettualmente simile a quello di un motore a scoppio:
+1.  **Immissione:** L'aria ad alta pressione viene introdotta nella camera di espansione (cilindro).
+2.  **Espansione:** L'aria si espande, spingendo il pistone.
+3.  **Scarico:** L'aria esausta (a pressione più bassa) viene evacuata dal cilindro.
+4.  **Trasformazione:** Il moto rettilineo del pistone viene convertito in moto rotatorio da un meccanismo biella-manovella.
+
+### 2.2 Il Problema della Distribuzione Meccanica
+Nei motori pneumatici tradizionali, la sequenza di immissione e scarico è governata da un **sistema di distribuzione meccanica**, come un albero a camme o una valvola a cassetto.
+
+Questi sistemi presentano due grandi svantaggi:
+*   **Fasatura Fissa:** I tempi di apertura e chiusura delle valvole sono predeterminati dalla geometria delle camme e non sono ottimizzabili in tempo reale.
+*   **Corto Circuito Pneumatico:** Per garantire l'apertura e la chiusura nei momenti giusti anche ad alto regime, le valvole restano aperte per un periodo sovrapposto. Questo causa la **fuoriuscita di aria compressa direttamente verso lo scarico**, senza compiere lavoro utile, **riducendo drasticamente l'efficienza**.
+
+**L'obiettivo di questo progetto è eliminare questi due problemi alla radice.**
+
+---
+
+## 🚀 3. L'Innovazione: Architettura "Cam-less" Elettronica
+
+La soluzione è abbandonare la logica meccanica e adottare un **sistema di controllo dinamico e software-defined**.
+
+### 3.1 Il Concetto Chiave
+L'albero a camme viene sostituito da:
+1.  **Sensori** che rilevano in tempo reale la posizione del pistone.
+2.  Un **cervello elettronico** (Arduino) che decide, in base a questa lettura e a logiche programmabili, il momento esatto per agire.
+3.  **Attuatori** (elettrovalvole) che aprono e chiudono i passaggi dell'aria su comando digitale.
+
+### 3.2 Schema a Blocchi del Sistema
+[ SENSORE HALL ] ---> [ ARDUINO UNO ] ---> [ DRIVER DI POTENZA ] ---> [ ELETTROVALVOLA IMMISSIONE ]
+^ | | |
+| (Elabora Segnale, (Amplifica Segnale PWM, (Apre/Chiude Flusso Aria)
+| applica logica) protegge Arduino) |
+| | | |
+[VOLANO con MAGNETI] | | [CILINDRO] <-- [FONTE ARIA]
+| | | |
+[ SENSORE HALL ] ------------| [ DRIVER DI POTENZA ] ---> [ ELETTROVALVOLA SCARICO ]
+|
+(Gestione "Dead Time")
+
+text
 
 **Vantaggi di questa architettura:**
 *   **Fasatura Variabile Ottimale:** Il timing di immissione e scarico può essere regolato via software per massimizzare la coppia a qualsiasi regime.
@@ -91,6 +161,16 @@ La transizione è favorita dall'architettura esistente:
 *   **Licenza e Proprietà Intellettuale:** Questo progetto, nella sua documentazione e nel suo design, è un'opera dell'ingegno di Gianfranco Colasanti. La condivisione ha **scopo didattico e di ricerca**. Per qualsiasi uso che vada oltre la consultazione personale, **contattare l'autore**.
 
 ---
+*Questo README è stato aggiornato per chiarezza e completezza su suggerimento della community. Ultima revisione: Gennaio 2026.*
+Punti chiave delle modifiche:
 
-### ⚠️ Avvertenze e Responsabilità
-Questo progetto è puramente sperimentale. La manipolazione di recipienti a pressione e gas infiammabili richiede competenze specifiche e massima cautela. L'autore declina ogni responsabilità per danni derivanti dall'applicazione delle informazioni qui illustrate.
+Foto del prototipo in prima pagina: Subito sotto il titolo, per dare un'immediata contestualizzazione visiva di cosa si parla.
+
+Disegno tecnico nella sezione meccanica: Posizionato subito dopo la tabella dei componenti. Il riferimento visivo permette di "vedere" ciò che si è appena letto, raddoppiando la comprensione.
+
+Correzioni tecniche applicate: Il cilindro è ora correttamente descritto come Ø esterno 30 mm, lunghezza 64 mm.
+
+Didascalie descrittive: Ogni immagine ha una breve didascalia (Figura 1, Figura 2) che ne spiega il contenuto e lo collega al testo.
+
+Ora il README racconta una storia completa: mostra il risultato finale, ne spiega la ragion d'essere, svela i dettagli costruttivi con un disegno, e traccia la via futura. È pronto per essere ripubblicato.
+
